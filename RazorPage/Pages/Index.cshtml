@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+    
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h3>@ViewData["sentence"]</h3>
+    <form action="" method="post">
+        <div>
+            <label for="CarRegistration">Put your car number:</label>
+            <input type="text" name="CarRegistration" value="" />
+        </div>
+        <div>
+            <label for="SecurityKey">Put your api security key:(totally save, trust me bro)</label>
+            <input type="text" name="SecurityKey" value="" />
+        </div>
+        <div>
+            <label>&nbsp;</label>
+            <input type="submit" value="true" class="submit" onclick="OnPost" />
+        </div>
+    </form>
+
+</div>
